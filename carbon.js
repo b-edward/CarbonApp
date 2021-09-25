@@ -1,25 +1,25 @@
 var CATEGORIES = {
   products: {
-    "image": "images/sample_image.png",
+    "image": "images/Types-of-produts.jpg",
 
   },
   transportation: {
-    "image": "images/sample_image.png",
+    "image": "images/trans.jpeg",
 
   },
   food: {
-    "image": "images/sample_image.png",
+    "image": "images/food.jpg",
 
   },
   social: {
-    "image": "images/sample_image.png",
+    "image": "images/social.jpg",
 
   },
   housekeeping: {
-    "image": "images/sample_image.png",
+    "image": "images/housekeeping.jpg",
   },
   travel: {
-    "image": "images/sample_image.png",
+    "image": "images/travel.jpeg",
   }
 }
 
