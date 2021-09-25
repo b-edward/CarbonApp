@@ -1,20 +1,34 @@
 body
 {
     background-color: white;
+	height: 100vh;
 }
 
 main {
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-areas:
+	  "profile summary friends"
+	  "profile game    friends";
 }
 
 main > * {
 	border: 1px dashed #eee; /* dev */
 }
 
+#userSummary {
+	grid-area: summary;
+}
+
+#userProfile {
+	grid-area: profile;
+}
+
 #game {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
+	height: 50vh;
+	grid-area: game;
 }
 
 .game-category {
@@ -33,7 +47,7 @@ main > * {
 	border-radius: 5px;
 	color: black;
 	text-align: center;
-	width: 25%;
+	width: 15%;
 }
 
 #userSummary div .value {
