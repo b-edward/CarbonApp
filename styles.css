@@ -78,6 +78,7 @@ main > * {
 #gameInner {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(999, min-content);
 	height: 50vh;
 }
 
