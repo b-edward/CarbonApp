@@ -1,15 +1,16 @@
 body
 {
-    background-color: white;
+    background-color: #eee;
 	height: 100vh;
+	color: black;
 }
 
 main {
 	display: grid!important;
 	grid-template-columns: 1fr 2fr 1fr;
 	grid-template-areas:
-	  "profile summary friends"
-	  "profile game    friends";
+	  "profile summary nearby"
+	  "profile game    nearby";
 }
 
 main > * {
@@ -22,6 +23,52 @@ main > * {
 
 #userProfile {
 	grid-area: profile;
+}
+
+#nearby {
+	grid-area: nearby;
+	border: 0;
+	padding: 0 5px;
+}
+
+#nearby h2 {
+	font-weight: bold;
+	text-align: center;
+}
+
+.nearby-profile {
+	border: 1px solid black;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: row;
+	margin: 5px 0;
+	padding: 5px 10px;
+	background-color: #ccc;
+}
+
+.nearby-profile .name {
+	flex-grow: 1;	
+}
+
+.nearby-profile .points {
+	font-weight: bold;
+	font-size: 2em;
+	margin: 0 10px;
+	color: black;
+}
+
+.nearby-profile .points::before {
+	content: "today ";
+	font-size: 1rem;
+	font-weight:normal;
+	color: #333;
+}
+
+.nearby-profile .points::after {
+	content: " pts.";
+	font-size: 1rem;
+	font-weight:normal;
+	color: #333;
 }
 
 #game {
@@ -46,7 +93,6 @@ main > * {
 #userSummary div {
 	border: 1px solid black;
 	border-radius: 5px;
-	color: black;
 	text-align: center;
 	width: 15%;
 }
