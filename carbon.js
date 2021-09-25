@@ -1,44 +1,48 @@
 var CATEGORIES = {
   products: {
     "image": "images/Types-of-products.png",
+     "items": [
+      {"name": "Grab Headphones", "points": 10},
+      {"name": "Bought Motherboard", "points": 15}
+    ]
   },
   transportation: {
     "image": "images/trans.jpeg",
     "items": [
       {"name": "took the bus", "points": 5},
-      {"work": "bought cap", "points": 3}
+      {"name": "bought cap", "points": 3}
     ]
   },
   food: {
     "image": "images/food.jpg",
     "items": [
-        {"name": "ate tuna sushi", "points": -15},
-        {"work": "short run for coffee", "points": 2}
+      {"name": "ate tuna sushi","points": -15},
+      {"name": "short run for coffee","points": 2},
+      {"name": "Ate Leftovers", "points": 5 },
+      {"name": "Ate local food","points": 2},
+      {"name": "Used Plastic tea bags","points": -2},
+      {"name": "Used Disposable Utensils","points": -5}
     ]
   },
   social: {
     "image": "images/social.jpg",
     "items": [
       {"name": "drank local beer", "points": 3},
-      {"work": "went for trip", "points": 4},
+      {"name": "went for trip", "points": 4}
     ]
   },
   housekeeping: {
     "image": "images/housekeeping.jpg",
     "items": [
-      { "name": "use push mower", "points": 10},
-      { "work": "walkway fixed", "points": 7}
+      {"name": "use push mower", "points": 10},
+      {"name": "walkway fixed", "points": 7}
     ]
   },
   travel: {
     "image": "images/travel.jpeg",
     "items": [
-      {
-        "name": "took train",
-        "points": 15,
-        "work": "electric scooter for saviour",
-        "points": 12,
-      }
+      {"name": "took train", "points": 15},
+      {"name": "electric scooter for saviour", "points": 12}
     ]
   }
 }
