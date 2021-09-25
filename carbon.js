@@ -1,11 +1,15 @@
 var CATEGORIES = {
   products: {
     "image": "images/Types-of-products.png",
-
   },
   transportation: {
     "image": "images/trans.jpeg",
-
+    "items": [
+      {
+        "name": "took the bus",
+        "points": 5,
+      }
+    ]
   },
   food: {
     "image": "images/food.jpg",
