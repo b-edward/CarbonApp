@@ -90,6 +90,20 @@ main > * {
 	background-color: #ccc;
 	height: max-content;
 	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+}
+
+.cat-item-points {
+	margin-left: 5px;
+}
+
+.cat-item-points::before {
+	content: "(";
+}
+
+.cat-item-points::after {
+	content: ")";
 }
 
 .game-category {
