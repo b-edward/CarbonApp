@@ -7,5 +7,5 @@
 
 
 
-![User Interface Example](https://github.com/b-edward/CarbonApp/blob/main/images/WebUI.xd)
+![User Interface Example](https://github.com/b-edward/CarbonApp/blob/main/images/UIexample.png)
 
