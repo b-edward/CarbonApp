@@ -111,6 +111,9 @@ main > * {
 	margin: 1em;
 	padding: 1em;
 	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .game-category .label {
