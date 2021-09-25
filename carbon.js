@@ -13,17 +13,39 @@ var CATEGORIES = {
   },
   food: {
     "image": "images/food.jpg",
-
+    "items": [
+      {
+        "name": "ate tuna sushi",
+        "points": -15,
+      }
+    ]
   },
   social: {
     "image": "images/social.jpg",
-
+    "items": [
+      {
+        "name": "drank local beer",
+        "points": 3,
+      }
+    ]
   },
   housekeeping: {
     "image": "images/housekeeping.jpg",
+    "items": [
+      {
+        "name": "use push mower",
+        "points": 10,
+      }
+    ]
   },
   travel: {
     "image": "images/travel.jpeg",
+    "items": [
+      {
+        "name": "took train",
+        "points": 15,
+      }
+    ]
   }
 }
 
