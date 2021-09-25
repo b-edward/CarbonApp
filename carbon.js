@@ -5,12 +5,8 @@ var CATEGORIES = {
   transportation: {
     "image": "images/trans.jpeg",
     "items": [
-      {
-        "name": "took the bus",
-        "points": 5,
-        "work": "bought cap",
-        "points": 3,
-      }
+      {"name": "took the bus", "points": 5},
+      {"work": "bought cap", "points": 3}
     ]
   },
   food: {
