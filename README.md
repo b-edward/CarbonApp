@@ -9,10 +9,10 @@ In today's world, it is hard to keep track of our environmental impact. While to
 
 ###### Features:
 
---* Track your carbon footprint
---* Make better decisions by seeing what the impact of your choices will be
---* See how others in your community are doing
---* Encourage lowered carbon footprints by spurring competition with friends
+* Track your carbon footprint
+* Make better decisions by seeing what the impact of your choices will be
+* See how others in your community are doing
+* Encourage lowered carbon footprints by spurring competition with friends
 
 #### Bell: Let's Greenify Our Communities!
 
