@@ -34,9 +34,15 @@ function renderCategories(){
       $("<div>").addClass("game-category").append(
         $(`<img src='${cat.image}'></img>`),
         $(`<div>${catName}</div>`).addClass("label"),
-      )
+      ).click(function(){renderCategory(cat)})
     )
   }
+}
+
+function renderCategory(cat){
+  console.log("renderCategory", cat)
+  // overwrite #game
+  // also render a back button which calls renderCategories
 }
 
 renderCategories();

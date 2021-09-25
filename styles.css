@@ -5,7 +5,7 @@ body
 }
 
 main {
-	display: grid;
+	display: grid!important;
 	grid-template-columns: 1fr 2fr 1fr;
 	grid-template-areas:
 	  "profile summary friends"
@@ -35,6 +35,7 @@ main > * {
 	border: 1px solid black;
 	margin: 1em;
 	padding: 1em;
+	cursor: pointer;
 }
 
 .game-category .label {
