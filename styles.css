@@ -1,7 +1,35 @@
 body
 {
     background-color: white;
-    color: #000066;
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+}
+
+main > * {
+	border: 1px dashed #eee; /* dev */
+}
+
+
+#userSummary div {
+	border: 1px solid black;
+	border-radius: 5px;
+	color: black;
+	text-align: center;
+	width: 25%;
+}
+
+#userSummary div .value {
+	border: none;
+	font-size: 5em;
+	width: 100%;
+}
+
+#userSummary div .label {
+	border: none;
+	width: 100%;
 }
 
 .table
