@@ -12,29 +12,33 @@ var CATEGORIES = {
   food: {
     "image": "images/food.jpg",
     "items": [
-      {"name": "ate tuna sushi","points": -15},
-      {"work": "short run for coffee","points": 2}
+        {"name": "ate tuna sushi", "points": -15},
+        {"work": "short run for coffee", "points": 2}
     ]
   },
   social: {
     "image": "images/social.jpg",
     "items": [
       {"name": "drank local beer", "points": 3},
-      {"work": "went for trip", "points": 4}
+      {"work": "went for trip", "points": 4},
     ]
   },
   housekeeping: {
     "image": "images/housekeeping.jpg",
     "items": [
-      {"name": "use push mower", "points": 10},
-      {"work": "walkway fixed", "points": 7}
+      { "name": "use push mower", "points": 10},
+      { "work": "walkway fixed", "points": 7}
     ]
   },
   travel: {
     "image": "images/travel.jpeg",
     "items": [
-      {"name": "took train", "points": 15},
-      {"work": "electric scooter for saviour", "points": 12}
+      {
+        "name": "took train",
+        "points": 15,
+        "work": "electric scooter for saviour",
+        "points": 12,
+      }
     ]
   }
 }
