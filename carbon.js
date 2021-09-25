@@ -1,6 +1,10 @@
 var CATEGORIES = {
   products: {
     "image": "images/Types-of-products.png",
+     "items": [
+      {"name": "Grab Headphones", "points": 10},
+      {"name": "Bought Motherboard", "points": 15}
+    ]
   },
   transportation: {
     "image": "images/trans.jpeg",
