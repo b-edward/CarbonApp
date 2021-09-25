@@ -72,10 +72,13 @@ main > * {
 }
 
 #game {
+	grid-area: game;
+}
+
+#gameInner {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	height: 50vh;
-	grid-area: game;
 }
 
 .game-category {

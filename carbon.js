@@ -41,22 +41,41 @@ var CATEGORIES = {
 
 function renderCategories(){
   var game = $("#game")
+  var inner = $("#gameInner")
+  var meta = $("#gameMeta")
+  inner.html("");
+  meta.html("");
   for(var cat in CATEGORIES){
     var catName = cat.toUpperCase()
     cat = CATEGORIES[cat];
     console.log("parsing category", cat);
     // given more time I would write this in vanilla js
-    game.append(
+    inner.append(
       $("<div>").addClass("game-category").append(
         $(`<img src='${cat.image}'></img>`),
         $(`<div>${catName}</div>`).addClass("label"),
-      ).click(function(){renderCategory(cat)})
+      ).click(function(){renderCategory(catName, cat)})
     )
   }
 }
 
-function renderCategory(cat){
-  console.log("renderCategory", cat)
+function backButton(){
+  return $("<button>").addClass("back-button").text("back").click(renderCategories)
+}
+
+function renderCategory(catName, cat){
+  console.log("renderCategory", catName, cat)
+  var game = $("#game")
+  var inner = $("#gameInner")
+  var meta = $("#gameMeta")
+  inner.html("")
+  meta.html("")
+  meta.append(backButton())
+  for(item of cat.items){
+    console.log(item)
+    inner.append($(`<div>${item.name}</div>`).addClass("cat-item"))
+  }
+
   // overwrite #game
   // also render a back button which calls renderCategories
 }
