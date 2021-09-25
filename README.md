@@ -1,6 +1,4 @@
-# Bell Geekfest Hackathon
-
-## Blue Team Submission
+# Blue Team Submission: Bell Geekfest Hackathon 2021
 
 ### Greenify Web App
 
