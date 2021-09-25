@@ -39,6 +39,12 @@ var CATEGORIES = {
   }
 }
 
+function categoryButtonCallback(catName, cat){
+  return function(){
+    renderCategory(catName, cat)
+  }
+}
+
 function renderCategories(){
   var game = $("#game")
   var inner = $("#gameInner")
@@ -54,13 +60,22 @@ function renderCategories(){
       $("<div>").addClass("game-category").append(
         $(`<img src='${cat.image}'></img>`),
         $(`<div>${catName}</div>`).addClass("label"),
-      ).click(function(){renderCategory(catName, cat)})
+      ).click(categoryButtonCallback(catName, cat))
     )
   }
 }
 
 function backButton(){
   return $("<button>").addClass("back-button").text("back").click(renderCategories)
+}
+
+function itemClick(){
+  var points = parseInt(this.getAttribute("points"))
+  var total = parseInt($("#totalPoints .value").text())
+  var today = parseInt($("#todayPoints .value").text())
+  console.log(this, points, total, today)
+  $("#totalPoints .value").text(total + points)
+  $("#todayPoints .value").text(today + points)
 }
 
 function renderCategory(catName, cat){
@@ -73,7 +88,12 @@ function renderCategory(catName, cat){
   meta.append(backButton())
   for(item of cat.items){
     console.log(item)
-    inner.append($(`<div>${item.name}</div>`).addClass("cat-item"))
+    inner.append(
+      $(`<button>`).click(itemClick).addClass("cat-item").attr("points", item.points).append(
+        $("<span>").addClass("cat-item-name").text(item.name),
+        $("<span>").addClass("cat-item-points").text(item.points),
+      )
+    )
   }
 
   // overwrite #game
