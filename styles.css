@@ -12,6 +12,21 @@ main > * {
 	border: 1px dashed #eee; /* dev */
 }
 
+#game {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.game-category {
+	border: 1px solid black;
+	margin: 1em;
+	padding: 1em;
+}
+
+.game-category .label {
+	text-align: center;
+}
+
 
 #userSummary div {
 	border: 1px solid black;
