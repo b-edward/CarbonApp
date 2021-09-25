@@ -8,6 +8,8 @@ var CATEGORIES = {
       {
         "name": "took the bus",
         "points": 5,
+        "work": "bought cap",
+        "points": 3,
       }
     ]
   },
@@ -17,6 +19,8 @@ var CATEGORIES = {
       {
         "name": "ate tuna sushi",
         "points": -15,
+        "work": "short run for coffee",
+        "points": 2,
       }
     ]
   },
@@ -26,6 +30,8 @@ var CATEGORIES = {
       {
         "name": "drank local beer",
         "points": 3,
+        "work": "went for trip",
+        "points": 4,
       }
     ]
   },
@@ -35,6 +41,8 @@ var CATEGORIES = {
       {
         "name": "use push mower",
         "points": 10,
+        "work": "walkway fixed",
+        "points": 7,
       }
     ]
   },
@@ -44,6 +52,8 @@ var CATEGORIES = {
       {
         "name": "took train",
         "points": 15,
+        "work": "electric scooter for saviour",
+        "points": 12,
       }
     ]
   }
