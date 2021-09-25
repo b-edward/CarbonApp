@@ -18,6 +18,10 @@ var CATEGORIES = {
     "items": [
       {"name": "ate tuna sushi","points": -15},
       {"name": "short run for coffee","points": 2}
+      {"name": "Cooked Leftover
+      {"name": "Ate local food","points": 2}
+      {"name": "Used Plastic tea bags","points": -2}
+      {"name": "Used Disposable Utensils","points": -5}
     ]
   },
   social: {
