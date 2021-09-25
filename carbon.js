@@ -1,6 +1,10 @@
 var CATEGORIES = {
   products: {
     "image": "images/Types-of-products.png",
+     "items": [
+      {"name": "Grab Headphones", "points": 10},
+      {"name": "Bought Motherboard", "points": 15}
+    ]
   },
   transportation: {
     "image": "images/trans.jpeg",
@@ -13,7 +17,11 @@ var CATEGORIES = {
     "image": "images/food.jpg",
     "items": [
       {"name": "ate tuna sushi","points": -15},
-      {"name": "short run for coffee","points": 2}
+      {"name": "short run for coffee","points": 2},
+      {"name": "Ate Leftovers", "points": 5 },
+      {"name": "Ate local food","points": 2},
+      {"name": "Used Plastic tea bags","points": -2},
+      {"name": "Used Disposable Utensils","points": -5}
     ]
   },
   social: {
