@@ -1,6 +1,6 @@
 var CATEGORIES = {
   products: {
-    "image": "images/Types-of-produts.jpg",
+    "image": "images/Types-of-products.png",
 
   },
   transportation: {
